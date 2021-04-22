@@ -24,8 +24,6 @@ export default function Mensajes(props) {
 
     };
 
-
-
     let eliminarMensajes = () => {
         dispatch(vaciarMensajes());
     };
