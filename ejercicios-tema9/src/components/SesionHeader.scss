@@ -1,0 +1,84 @@
+@import "src/colors.scss";
+
+.MensajesHeader {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px;
+}
+
+.Nuevo {
+    background-color: #469553;
+    height: fit-content;
+    margin: auto;
+}
+
+.Nuevo:hover {
+    background-color: #336e3d;
+}
+
+.Boton {
+    margin-left: 4px;
+    margin-right: 4px;
+
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 2px;
+
+    color: $light;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.Vaciar {
+    @extend .Boton;
+    background-color: $danger;
+    height: fit-content;
+    margin: auto;
+}
+
+.Logged {
+    @extend .Boton;
+    background-color: $dark;
+    height: fit-content;
+    margin: auto;
+}
+
+.Vaciar:hover {
+    background-color: $dangerDark;
+}
+
+.Logged:hover {
+    background-color: $secondary;
+}
+
+.divFormulario {
+    display: flex;
+    width: 100%;
+}
+
+.divInput {
+    width: 180px;
+    max-width: 180px;
+    margin: 15px;
+}
+
+.input {
+    width: 100%;
+    margin: 0;
+}
+
+.anchor {
+    font-weight: 500;
+    color: blue;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
