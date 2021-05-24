@@ -15,7 +15,7 @@ import BarraOpciones from './components/BarraOpciones';
 
 function App() {
 
-  let toggler = useSelector(state => state.iniciado);
+  //let toggler = useSelector(state => state.iniciado);
   //const [logger, setLogger] = useState(false);
 
   let logout = () => {

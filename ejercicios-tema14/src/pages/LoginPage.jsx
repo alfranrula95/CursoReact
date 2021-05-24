@@ -11,7 +11,7 @@ export default function LoginPage() {
     const [pass, setPass] = useState('');
     const [error, setError] = useState(false);
     const history = useHistory();
-    const dispatcher = useDispatch();
+    //const dispatcher = useDispatch();
     const contexter = useContext(context);
 
     //const [logger, dispatch] = useReducer(reducerLogger, initialStateLogger);

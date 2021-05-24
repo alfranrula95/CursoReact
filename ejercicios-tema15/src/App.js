@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.scss';
 import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 import RegistroPage from './pages/Registro';
 import LoginPage from './pages/LoginPage';
 import StoreComponent from './pages/Store';
@@ -9,13 +7,13 @@ import SessionHeader from './components/SesionHeader';
 import DetallesProducto from './pages/DetallesProducto';
 import About from './pages/About';
 import context from './context/context';
-import { useEffect, useReducer, useState } from 'react';
+import { useEffect, useReducer } from 'react';
 import { initialStateLogger, LOGIN, LOGOUT, reducerLogger } from './context/reducers';
 import BarraOpciones from './components/BarraOpciones';
 
 function App() {
 
-  let toggler = useSelector(state => state.iniciado);
+  //let toggler = useSelector(state => state.iniciado);
   //const [logger, setLogger] = useState(false);
 
   let logout = () => {
